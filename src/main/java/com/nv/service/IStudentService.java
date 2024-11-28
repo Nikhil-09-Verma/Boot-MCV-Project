@@ -8,5 +8,9 @@ public interface IStudentService
 {
 	//method for selecting all Student
 	public List<Student> fetchAllStudent();
+	
+	//method for add Student
+	
+	public String registerStudent(Student stu);
 
 }

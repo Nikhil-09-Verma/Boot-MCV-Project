@@ -18,5 +18,11 @@ public class StudentMgmtService implements IStudentService
 	{
 		return StuRepo.findAll();
 	}
+	@Override
+	public String registerStudent(Student stu) 
+	{
+		
+		return "Student Register with Sno::"+StuRepo.save(stu).getSno();
+	}
 
 }

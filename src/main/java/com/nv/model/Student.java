@@ -23,7 +23,7 @@ public class Student implements Serializable
 	@GeneratedValue(generator = "gen1",strategy = GenerationType .SEQUENCE)
 	private Integer sno;
 	private String sname;
-	private String cource;
+	private String course="java";
 	private Double fee;
 	
 }

@@ -14,7 +14,7 @@
 				<tr bgcolor="yellow">
 					<th>Student No</th>
 					<th>Student Name</th>
-					<th>cource</th>
+					<th>course</th>
 					<th>fees</th>
 					<th>operations</th>
 
@@ -24,7 +24,7 @@
 					<tr bgcolor="pink">
 						<td>${stu.sno }</td>
 						<td>${stu.sname}</td>
-						<td>${stu.cource}</td>
+						<td>${stu.course}</td>
 						<td>${stu.fee}</td>
 						<td><a href="edit?no=${stu.sno }">Edit</a> <a
 							href="delete?no=${stu.sno }"
@@ -41,8 +41,14 @@
 
 		</c:otherwise>
 	</c:choose>
+	<h2 style="color: red; text-align: center;">${resultMsg}</h2>
+
 	<h1 style="color: red; text-align: center;">
 		<a href="./">Home</a>
 	</h1>
+
+	<p style="color: green; text-align: center;">
+		<a href="register">Add Student</a>
+	</p>
 </body>
 </html>
