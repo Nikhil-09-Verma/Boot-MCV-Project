@@ -24,10 +24,19 @@
 				<td><frm:input path="fee" /></td>
 			</tr>
 			<tr>
+				<td>countries::</td>
+				<td><frm:select path="country">
+				<frm:options items="${cList }"/>
+				</frm:select>
+				</td>
+			</tr>
+			<tr>
 				<td><input type="submit" value="register"></td>
 			</tr>
 
 		</table>
+		
+		
 
 
 
